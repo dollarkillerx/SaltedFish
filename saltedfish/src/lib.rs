@@ -1,3 +1,6 @@
+mod core;
+mod conf;
+
 #[cfg(test)]
 mod tests {
     #[test]
