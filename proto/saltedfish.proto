@@ -1,0 +1,103 @@
+syntax = "proto3";
+package saltedfish;
+
+service SaltedFish {
+  // auth
+  rpc Login (LoginReq) returns (LoginResp);
+
+  // curd
+  rpc InsertOne(InsertOneReq) returns (InsertOneResp);
+  rpc InsertMany(InsertManyReq) returns (InsertManyResp);
+
+  rpc UpdateOne(UpdateOneReq) returns (UpdateOneResp);
+  rpc UpdateMany(UpdateManyReq) returns (UpdateManyResp);
+
+  rpc Find(FindReq) returns (FindResp);
+  rpc FindOne(FindOneReq) returns (FindOneResp);
+
+  rpc DeleteOne(DeleteOneReq) returns (DeleteOneResp);
+  rpc DeleteMany(DeleteManyReq) returns (DeleteManyResp);
+
+  rpc Count(CountReq) returns (CountResp);
+}
+
+message CountReq {
+
+}
+
+message CountResp {
+
+}
+
+message DeleteOneReq {
+
+}
+
+message DeleteOneResp {
+
+}
+
+message DeleteManyReq {
+
+}
+
+message DeleteManyResp {
+
+}
+
+message FindReq {
+
+}
+
+message FindResp {
+
+}
+
+message FindOneReq {
+
+}
+
+message FindOneResp {
+
+}
+
+message InsertOneReq {
+
+}
+
+message InsertOneResp {
+
+}
+
+message InsertManyReq {
+
+}
+
+message InsertManyResp {
+
+}
+
+message UpdateOneReq {
+
+}
+
+message UpdateOneResp {
+
+}
+
+message UpdateManyReq {
+
+}
+
+message UpdateManyResp {
+
+}
+
+message LoginReq {
+  string user = 1;
+  string password = 2;
+}
+
+message LoginResp {
+  string token = 1;
+}
